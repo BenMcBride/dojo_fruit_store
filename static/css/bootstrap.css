@@ -505,6 +505,11 @@ mark,
   color: #6c757d;
 }
 
+.fruit-img {
+  max-height: 106px;
+  width: auto;
+}
+
 code,
 kbd,
 pre,

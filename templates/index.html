@@ -34,7 +34,7 @@
   
         <div class="album py-5 bg-light">
           <div class="container">
-             <form action='/checkout' method='post'>
+              <form action='/checkout' method='post'>
                 <h4 class="mb-3" id='buy'>What would you like to buy?</h4>
                 <table class="table table-striped">
                     <thead>
@@ -47,7 +47,7 @@
                     <tr>
                         <td>Strawberry</td>
                         <td>
-                            <select name='strawberry'>
+                            <select action="/checkout" method="post" name='strawberry'>
                                 <option value='0'>0</option>
                                 <option value='1'>1</option>
                                 <option value='2'>2</option>
@@ -59,7 +59,7 @@
                     <tr>
                         <td>Raspberry</td>
                         <td>
-                            <select name='raspberry'>
+                            <select action="/checkout" method="post" name='raspberry'>
                                 <option value='0'>0</option>
                                 <option value='1'>1</option>
                                 <option value='2'>2</option>
@@ -71,7 +71,7 @@
                     <tr>
                         <td>Apple</td>
                         <td>
-                            <select name='apple'>
+                            <select action="/checkout" method="post" name='apple'>
                                 <option value='0'>0</option>
                                 <option value='1'>1</option>
                                 <option value='2'>2</option>
@@ -87,17 +87,17 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">First name</label>
-                        <input type="text" class="form-control" name="first_name" placeholder="" value="">
+                        <input action="/checkout" method="post" type="text" class="form-control" name="first_name" placeholder="" value="" required>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" name="last_name" placeholder="" value="">
+                        <input action="/checkout" method="post" type="text" class="form-control" name="last_name" placeholder="" value="" required>
                     </div>
                 </div>
   
                 <div class="mb-3">
                     <label for="email">Your Student ID <span class="text-muted">(Optional)</span></label>
-                    <input type="text" class="form-control" name="student_id" placeholder="123-456-7890">
+                    <input action="/checkout" method="post" type="text" class="form-control" name="student_id" placeholder="123-456-7890">
                 </div>
               
                 <hr class="mb-4">
